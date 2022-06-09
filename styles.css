@@ -1,0 +1,426 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-size: 62.5%; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Quentin Regular";
+  src: url(Asset/quentin-cufonfonts-webfont/Quentin.woff);
+  font-weight: 200;
+}
+
+.landing-page {
+  background-repeat: no-repeat;
+  background: url("https://the5kshop.com/wp-content/uploads/2018/12/Copy-of-Grand-Makeup-Sale.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 110vh;
+  z-index: 20;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+main {
+  position: relative;
+}
+nav {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 0 3.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.logo {
+  height: 45px;
+  width: 169px;
+  margin-right: auto;
+}
+.mid-logo {
+  display: none;
+  height: 45px;
+  width: 169px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 60%;
+  cursor: pointer;
+}
+.nav-icon-right {
+  display: flex;
+  align-items: center;
+}
+.nav-icon-right > img,
+.nav-icon3 {
+  height: 1.8rem;
+}
+.cart {
+  display: none;
+}
+
+.nav-icons {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 8rem;
+}
+
+.shop {
+  padding: 3.5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  background-color: rgba(225, 218, 218, 0.327);
+}
+.shop-item > img {
+  width: 100%;
+  height: 100%;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.button-filled {
+  background-color: black;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 15px;
+}
+.fixed {
+  font-size: 18px;
+  font-weight: 600;
+  transform: rotate(-90deg);
+  position: fixed;
+  bottom: 5.5rem;
+  right: -30px;
+}
+
+.new-article {
+  margin: 12rem 0 0.5rem 15rem;
+  text-align: right;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 23rem;
+}
+.heading2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.2162em;
+}
+.new {
+  font-family: "Quentin Regular";
+  font-size: 98px;
+  line-height: 160px;
+  font-weight: 200;
+}
+
+.unfilled {
+  font-weight: bold;
+  display: block;
+  font-size: 16px;
+}
+small {
+  color: rgb(163, 160, 160);
+  font-size: 12px;
+}
+.grey-text {
+  color: grey;
+  font-weight: 300;
+}
+.party {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+}
+.party > div {
+  width: 50%;
+  height: 100%;
+}
+
+.party-image {
+  background-image: url(https://the5kshop.com/wp-content/uploads/2018/12/Untitled-design-129.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.party-text {
+  padding: 5rem 4rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  background-color: rgba(225, 218, 218, 0.327);
+}
+.underline {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+.section-heading {
+  font-size: 40px;
+  font-family: "Quentin Regular";
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.new-drops {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* im noticing that min-width and max-width/height save you from media queries */
+.new-drops-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  min-height: 40vh;
+  min-width: 48%;
+  max-width: 70%;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 30px;
+  padding: 2rem 8rem 7rem;
+  width: 100%;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+.items > * {
+  width: 100%;
+}
+.items > img {
+  height: 22rem;
+  object-fit: cover;
+}
+.items > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* testimonial section */
+.testimonial {
+  text-align: center;
+  background-color: rgba(238, 233, 233, 0.327);
+  height: 85vh;
+  padding: 6rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+.testimonial > h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.2162em;
+}
+.testimony {
+  min-height: 12rem;
+  max-height: 17rem;
+}
+.space-bottom {
+  margin-bottom: 2rem;
+}
+.testimony1 {
+  display: none;
+}
+.social {
+  height: 55vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  padding: 7rem 4rem;
+  margin-bottom: 5rem;
+}
+.social > h2 {
+  margin-bottom: 4rem;
+}
+/* featured section*/
+.featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 58vh;
+  padding: 7rem 2rem;
+}
+h4 {
+  line-height: 1.304em;
+  font-size: 23px;
+  font-weight: 500;
+}
+.feature-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 75%;
+  flex-wrap: wrap;
+}
+.feature-logo > img {
+  max-height: 2.2rem;
+}
+
+.top-footer {
+  background-color: black;
+  min-height: 70vh;
+  padding: 5rem 7rem 4rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  color: white;
+  align-items: start;
+}
+.footer-logo {
+  height: 45px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.input-div {
+  display: flex;
+  border: 2px solid grey;
+  align-items: center;
+}
+.footer-input {
+  padding: 1rem 1.5rem;
+  background-color: black;
+  border: none;
+  color: white;
+  width: 9rem;
+}
+.size {
+  width: 6rem;
+  padding: 1rem 0.5rem;
+}
+.section2 {
+  height: 7rem;
+}
+.footer-list {
+  min-height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.section4 {
+  height: 8rem;
+}
+.footer-input:focus {
+  outline: none;
+}
+.botttom-footer {
+  padding: 10px 10px 10px 0;
+}
+@media (max-width: 1000px) {
+  .logo,
+  .nav-link,
+  .nav-icon1 {
+    display: none;
+  }
+  .nav-menu {
+    width: 100%;
+    display: flex;
+  }
+
+  .mid-logo,
+  .cart {
+    display: block;
+  }
+  .nav-icon-right > img {
+    margin-right: 1rem;
+  }
+  .nav-icon3 {
+    order: -1;
+  }
+
+  .shop {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding: 3.5rem 11rem;
+  }
+  .new-article {
+    float: right;
+    margin: 13rem 5rem 0.5rem 0;
+  }
+  .products {
+    padding: 2rem 5rem 3rem;
+  }
+
+  .top-footer {
+    padding: 5rem 3rem 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    column-gap: 4rem;
+  }
+  .footer-input {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .top-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-input {
+    width: 12rem;
+  }
+  .size {
+    width: 10rem;
+  }
+  .party {
+    flex-direction: column;
+    justify-content: center;
+    height: 50rem;
+  }
+  .party > div {
+    width: 100%;
+    height: 50%;
+  }
+  .shop {
+    padding: 3.5rem 8rem;
+  }
+  .new-article {
+    float: none;
+    margin: 2rem auto 4rem;
+  }
+}
